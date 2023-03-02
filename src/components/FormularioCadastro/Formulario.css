@@ -3,3 +3,21 @@ input {
     border: 1px solid black;
     border-radius: 3px;    
 }
+#form-cadastro {
+    
+}
+.lineInput {
+    margin: 20px;
+}
+.container-usuario {
+    display: flex;
+    justify-content: flex-start;
+}
+label {
+    margin-right: 20px;
+}
+.container-veiculo {
+    display: flex;
+    justify-content: flex-start;    
+    
+}
