@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
 
 :root {
-    --cor0: #624AE8;
-    --cor1: #5E72FF;
-    --cor2: #4A86E8;
-    --cor3: #52C1FF;
-
     --fonte-destaque: 'Mitr', sans-serif;
 }
 
@@ -35,4 +30,8 @@ label {
 .container-veiculo {
     display: flex;
     justify-content: flex-start;    
+}
+#btnSalvar {
+    float: right;
+    margin: 20px;
 }
