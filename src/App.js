@@ -4,8 +4,7 @@ import Formulario from './components/FormularioCadastro';
 
 function App() {
   return (
-    <div className="App">      
-      <h1>Cadastro</h1>
+    <div className="App">
       <Formulario />
       <DadosUsuario />
     </div>

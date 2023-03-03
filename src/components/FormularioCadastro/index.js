@@ -4,6 +4,7 @@ function Formulario () {
 
     return (
         <div>
+            <h1 className='title'>Cadastro</h1>
             <form id='form-cadastro'>
                 <div className='container-usuario'>
                     <div class="lineInput">
@@ -34,7 +35,7 @@ function Formulario () {
                         <input type="text" id="placa" />
                     </div>
                     <div class="lineInput">
-                        <label for="anoModelo">Ano Modelo: </label>
+                        <label for="anoModelo">Ano Modelo </label>
                         <input type="text" id="anoModelo" />
                     </div>
                     </div>

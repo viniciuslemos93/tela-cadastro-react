@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
+
+:root {
+    --cor0: #624AE8;
+    --cor1: #5E72FF;
+    --cor2: #4A86E8;
+    --cor3: #52C1FF;
+
+    --fonte-destaque: 'Mitr', sans-serif;
+}
+
+.title {
+    font-family: var(--fonte-destaque);
+    margin-left: 20px;
+}
 input {
-    padding: 7px;
+    padding: 5px;
     border: 1px solid black;
     border-radius: 3px;    
 }
@@ -15,6 +30,7 @@ input {
 }
 label {
     margin-right: 20px;
+    font-family: var(--fonte-destaque);
 }
 .container-veiculo {
     display: flex;
