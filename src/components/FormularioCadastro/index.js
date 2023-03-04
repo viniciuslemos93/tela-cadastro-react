@@ -3,6 +3,7 @@ import CampoDeInput from "../CampoDeInput"
 import Select from "../Select"
 import { useState } from 'react'
 import { cpfMask } from '../../helpers/CpfMask'
+import ListaVeiculos from '../ListaVeiculos'
 
 function Formulario () {
 
@@ -14,7 +15,8 @@ function Formulario () {
     const [cpf, setCpf] = useState ('')
     const [veiculo, setVeiculo] = useState ('')
     const [placa, setPlaca] = useState ('')
-
+    const carros = ['Gol', 'Uno', 'Ford Ka']
+    console.log(veiculo)
     return (
         
         <div>
@@ -57,8 +59,16 @@ function Formulario () {
                     id="veiculo"
                     aoAlterado={valor => setVeiculo(valor)}
                     valor = {veiculo}
+                                        
                 />
-                    
+                {veiculo.length > 0 ?
+                <ListaVeiculos                
+                    listaVeiculos={carros}
+                    aoAlterado = {setVeiculo}
+                    veiculo={veiculo}
+                /> : ''}
+
+
                 <CampoDeInput 
                     nome="Placa"
                     id="placa"
