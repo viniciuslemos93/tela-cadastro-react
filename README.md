@@ -32,7 +32,7 @@
 <img align="center" alt="Design do site" width="500" src="print.PNG">
 </div>
 
-### Deploy: 
+### Deploy: https://vercel.com/viniciuslemos93/tela-cadastro-react
 
 &#xa0;
 
@@ -50,6 +50,7 @@
 
 ## :hammer_and_wrench: Serviços
 * <a href="https://github.com/">GitHub</a>
+* <a href="https://vercel.com/">Vercel</a>
 
 &#xa0;
 
