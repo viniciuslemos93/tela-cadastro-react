@@ -2,11 +2,18 @@ import './Formulario.css'
 import CampoDeInput from "../CampoDeInput"
 import Select from "../Select"
 import { useState } from 'react'
+import { cpfMask } from '../../helpers/CpfMask'
 
 function Formulario () {
 
+    let anos = [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
     const [genero, setGenero] = useState ('')
-    console.log(genero)
+    const [ano, setAno] = useState ('')
+    const [nome, setNome] = useState ('')
+    const [dataNasc, setDataNasc] = useState ('')
+    const [cpf, setCpf] = useState ('')
+    const [veiculo, setVeiculo] = useState ('')
+    const [placa, setPlaca] = useState ('')
 
     return (
         
@@ -18,17 +25,25 @@ function Formulario () {
                 <CampoDeInput 
                     nome="Nome"
                     id="nome"
+                    aoAlterado={valor => setNome(valor)}
+                    valor = {nome}
                 />
-                    <div class="lineInput">
-                        <label for="dataNasc">Data Nascimento </label>
-                        <input type="date" id="dataNasc" />
-                    </div>
+                    <CampoDeInput 
+                    nome="Data Nascimento"
+                    id="dataNasc"
+                    tipo='date'
+                    aoAlterado={valor => setDataNasc(valor)}
+                    valor = {dataNasc}
+                />
+
                 <CampoDeInput 
                     nome="CPF"
                     id="cpf"
+                    aoAlterado={valor => setCpf(cpfMask(valor))}
+                    valor = {cpf}
                 />
                     <Select
-                    titulo="Gênero"
+                    titulo="Gênero"                    
                     opcoes={['m', 'f']}
                     aoAlterado={valor => setGenero(valor)}
                     valor={genero}
@@ -37,19 +52,28 @@ function Formulario () {
                 </div>
                 
                 <div className='container-veiculo'>
-                    <div class="lineInput">
-                        <label for="veiculo">Veículo </label>
-                        <input type="text" id="veiculo" />
-                    </div>
+                <CampoDeInput 
+                    nome="Veículo"
+                    id="veiculo"
+                    aoAlterado={valor => setVeiculo(valor)}
+                    valor = {veiculo}
+                />
                     
                 <CampoDeInput 
                     nome="Placa"
                     id="placa"
+                    aoAlterado={valor => setPlaca(valor)}
+                    valor = {placa}
                 />
-                    <div class="lineInput">
-                        <label for="anoModelo">Ano Modelo </label>
-                        <input type="text" id="anoModelo" />                        
-                    </div>
+                    
+                <Select
+                titulo="Ano Modelo"
+                tamanho={5}
+                opcoes={anos}
+                aoAlterado={valor => setAno(valor)}
+                valor={ano}
+                />
+
                     <button id='btnSalvar'>Salvar</button>
                 </div>
                 
