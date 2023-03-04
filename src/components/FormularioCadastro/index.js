@@ -1,7 +1,12 @@
 import './Formulario.css'
 import CampoDeInput from "../CampoDeInput"
+import Select from "../Select"
+import { useState } from 'react'
 
 function Formulario () {
+
+    const [genero, setGenero] = useState ('')
+    console.log(genero)
 
     return (
         
@@ -22,10 +27,13 @@ function Formulario () {
                     nome="CPF"
                     id="cpf"
                 />
-                    <div class="lineInput">
-                        <label for="genero">Gênero </label>
-                        <input type="" id="genero" />
-                    </div>
+                    <Select
+                    titulo="Gênero"
+                    opcoes={['m', 'f']}
+                    aoAlterado={valor => setGenero(valor)}
+                    valor={genero}
+                    />
+
                 </div>
                 
                 <div className='container-veiculo'>
@@ -41,9 +49,10 @@ function Formulario () {
                     <div class="lineInput">
                         <label for="anoModelo">Ano Modelo </label>
                         <input type="text" id="anoModelo" />                        
-                    </div>                    
+                    </div>
+                    <button id='btnSalvar'>Salvar</button>
                 </div>
-                <button id='btnSalvar'>Salvar</button>
+                
             </form>
         </div>
     )
