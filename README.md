@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+<h1 align="center">Tela de Cadastro - React</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**<p align="center">Sumário</p>**
+<p align="center">
+<a href="#dart-sobre">Sobre</a> &#xa0; | &#xa0;
+<a href="#computer-tecnologias">Tecnologias</a> |
+<a href="#books-O-que-eu-aprendi">O que aprendi</a> &#xa0; 
+</p>
+<p align="center">
+<a href="#hammer_and_wrench-serviços">Serviços</a> &#xa0; | &#xa0;
+<a href="#scroll-rodando-o-projeto">Rodando o projeto</a> &#xa0; | &#xa0;
+<a href="#sparkles-autor">Autor</a>
+</p>
 
-## Available Scripts
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=VERSION&message=1.0&color=GREEN&style=for-the-badge"/>
+</p>
 
-In the project directory, you can run:
+&#xa0;
+ 
+## :dart: Sobre
+<p>Esta aplicação é fruto de um teste técnico para uma vaga de Front end.</p>
+<p>A ideia central da aplicação é trabalhar com alguns inputs e formulário de cadastro, realizar o cadastro e também poder editar as informações.</p>
+<p>E para armazenar as informações utilizaremos o LocalStorage.</p>
 
-### `npm start`
+<h1 align="center">Resultado</h1>
+<div align="center">
+<img align="center" alt="Design do site" width="500" src="gif-projeto.gif">
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div align="center">
+<img align="center" alt="Design do site" width="500" src="print.PNG">
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Deploy: 
 
-### `npm test`
+&#xa0;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## :computer: Tecnologias
 
-### `npm run build`
+* [React](https://pt-br.reactjs.org/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* [CSS](https://www.w3schools.com/css/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* [JavaScript](https://www.javascript.com/)
 
-### `npm run eject`
+&#xa0;
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## :hammer_and_wrench: Serviços
+* <a href="https://github.com/">GitHub</a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+&#xa0;
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## :books: O que eu aprendi?
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+📌 Trabalhar com componentes no React.
 
-## Learn More
+&#xa0;
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## :scroll: Rodando o projeto
+É necessário ter instalado o NodeJs.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Clone este repositório
+git clone https://github.com/viniciuslemos93/tela-cadastro-react.git
 
-### Code Splitting
+# Acesse a pasta do projeto pelo terminal de comando, e digite:
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Acesse o endereço: (http://localhost:3000) para acessar a aplicação em seu navegador.
+```
 
-### Analyzing the Bundle Size
+&#xa0;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## :sparkles: Autor
 
-### Making a Progressive Web App
+<h4>Desenvolvido por Vinicius Lemos</h4>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<a href="https://github.com/viniciuslemos93">
+<img src="https://github.com/viniciuslemos93.png" width="150px" alt="Imagem do autor">
+</a>
 
-### Advanced Configuration
+&#xa0;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![Linkedin Badge](https://img.shields.io/badge/-Vinicius%20Lemos-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/viniciuslemos93/)](https://www.linkedin.com/in/viniciuslemos93/)<br>
