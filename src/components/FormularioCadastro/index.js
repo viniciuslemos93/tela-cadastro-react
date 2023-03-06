@@ -15,7 +15,7 @@ function Formulario () {
     const [cpf, setCpf] = useState ('')
     const [veiculo, setVeiculo] = useState ('')
     const [placa, setPlaca] = useState ('')
-    const carros = ['Gol', 'Uno', 'Ford Ka']
+    const carros = ['Gol', 'Uno', 'Ford Ka', 'Fox', 'IX35', 'HB20']
     console.log(veiculo)
     return (
         
