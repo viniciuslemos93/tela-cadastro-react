@@ -32,7 +32,7 @@
 <img align="center" alt="Design do site" width="500" src="print.PNG">
 </div>
 
-### Deploy: https://vercel.com/viniciuslemos93/tela-cadastro-react
+### Deploy: https://tela-cadastro-react-6ijuyqd2m-viniciuslemos93.vercel.app/
 
 &#xa0;
 
